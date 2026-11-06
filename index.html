@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharon Perera Makawitage | BEng Aeronautical Engineer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to Separate Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        },
+                        tech: {
+                            dark: '#0B0F17',
+                            card: '#111827',
+                            border: '#1F2937',
+                            accent: '#00F0FF',
+                            purple: '#A855F7'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="grid-pattern antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card border-b border-gray-800 px-4 lg:px-12 py-3.5 transition-all">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="#hero" class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-brand-600 to-tech-accent flex items-center justify-center font-mono font-bold text-slate-900 text-lg shadow-lg shadow-brand-500/20">
+                    SP
+                </div>
+                <div>
+                    <span class="font-bold tracking-tight text-white block text-sm sm:text-base leading-none">Sharon Perera Makawitage</span>
+                    <span class="text-[10px] font-mono text-brand-400">BEng Aeronautical Engineer</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-brand-400 transition">About</a>
+                <a href="#projects" class="hover:text-brand-400 transition">Key Projects</a>
+                <a href="#skills" class="hover:text-brand-400 transition">Skills</a>
+                <a href="#contact" class="hover:text-brand-400 transition">Contact</a>
+            </div>
+
+            <!-- Action Buttons Group (Both buttons inside the same container) -->
+<div class="flex items-center space-x-4">
+    <!-- View CV Button -->
+    <a href="https://drive.google.com/file/d/1uzTErepOWqoc-tKczJa4XI9L08PclS_6/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 text-xs sm:text-sm font-medium font-mono transition inline-flex items-center space-x-2">
+        <i class="fa-solid fa-file-pdf"></i>
+        <span>View CV</span>
+    </a>
+
+    <!-- Hire Me Button -->
+    <a href="#contact" class="px-3.5 py-1.5 rounded-lg bg-brand-500 hover:bg-brand-600 text-slate-950 font-semibold text-xs sm:text-sm transition shadow-md shadow-brand-500/20">
+        Hire Me
+    </a>
+</div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="pt-32 pb-20 lg:pt-40 lg:pb-32 px-4 max-w-7xl mx-auto relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-6 text-left">
+                <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-mono">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>Available for Graduate &amp; Junior Roles</span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+    Graduate <br>
+    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-tech-accent to-purple-400">Aeronautical</span> Engineer
+</h1>
+                
+                <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl">
+                    Graduate BEng (Hons) in Aeronautical Engineering from the University of Salford (2:1). Specialising in non-linear control algorithms, computational fluid dynamics (CFD), aerodynamic wing optimisation, and mechanical CAD modeling.
+                </p>
+
+                <div class="pt-2 flex flex-wrap gap-4 text-xs font-mono text-slate-300">
+                    <div class="flex items-center space-x-2 bg-slate-900/80 px-3 py-2 rounded-lg border border-slate-800">
+                        <i class="fa-solid fa-graduation-cap text-brand-400"></i>
+                        <span>Salford BEng (2:1)</span>
+                    </div>
+                    <div class="flex items-center space-x-2 bg-slate-900/80 px-3 py-2 rounded-lg border border-slate-800">
+                        <i class="fa-solid fa-location-dot text-brand-400"></i>
+                        <span>Stoke-on-Trent, UK</span>
+                    </div>
+                    <div class="flex items-center space-x-2 bg-slate-900/80 px-3 py-2 rounded-lg border border-slate-800">
+                        <i class="fa-solid fa-brain text-brand-400"></i>
+                        <span>Fuzzy Neural Networks</span>
+                    </div>
+                </div>
+
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="#projects" class="px-6 py-3 rounded-lg bg-brand-500 hover:bg-brand-600 text-slate-950 font-semibold transition flex items-center space-x-2 shadow-lg shadow-brand-500/25">
+                        <span>Explore Projects</span>
+                        <i class="fa-solid fa-arrow-down text-xs"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/sharon-perera-makawitage-356a39294/" target="_blank" class="px-6 py-3 rounded-lg border border-slate-700 hover:border-brand-500/50 bg-slate-900/50 text-slate-200 font-medium transition flex items-center space-x-2">
+                        <i class="fa-brands fa-linkedin text-brand-400"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                    <a href="mailto:sharonperera004@gmail.com" class="px-4 py-3 rounded-lg border border-slate-700 hover:border-slate-500 bg-slate-900/50 text-slate-400 hover:text-white transition">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="lg:col-span-5 relative">
+                <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-brand-500 to-tech-accent opacity-20 blur-xl"></div>
+                <div class="relative glass-card p-6 rounded-2xl border border-slate-800 space-y-5">
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                            <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+                            <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                            <span class="text-xs font-mono text-slate-400 ml-2">TRMS_Control_Sim.m</span>
+                        </div>
+                        <span class="text-[10px] font-mono bg-brand-500/10 text-brand-400 px-2 py-0.5 rounded">MATLAB R2024a</span>
+                    </div>
+
+                    <div class="font-mono text-xs space-y-2 text-slate-300">
+                        <p><span class="text-purple-400">% Intelligent Control Loop</span></p>
+                        <p><span class="text-brand-400">sys</span> = TRMS_MIMO_Model(<span class="text-amber-300">'pitch'</span>, <span class="text-amber-300">'yaw'</span>);</p>
+                        <p><span class="text-brand-400">fnn</span> = initFuzzyNeuralNet(weights, rules);</p>
+                        <p><span class="text-brand-400">response</span> = simulate_HIL(sys, fnn, pd_loop);</p>
+                    </div>
+
+                    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-3">
+                        <div class="flex justify-between items-center text-xs">
+                            <span class="text-slate-400">Cross-Coupling Overshoot Reduction</span>
+                            <span class="text-emerald-400 font-mono font-bold">-48.5% Error</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                            <div class="bg-gradient-to-r from-brand-500 to-emerald-400 h-full w-[82%] rounded-full"></div>
+                        </div>
+                        <div class="flex justify-between text-[10px] font-mono text-slate-500">
+                            <span>Standard PD: 2.4s</span>
+                            <span class="text-brand-400">FNN Hybrid: 0.8s</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- ABOUT SECTION -->
+    <section id="about" class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="glass-card rounded-2xl p-8 lg:p-12 border border-slate-800">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Left Column: Expanded Background Narrative -->
+                <div class="lg:col-span-4 border-b lg:border-b-0 lg:border-r border-slate-800 pb-6 lg:pb-0 lg:pr-8 space-y-4">
+                    <span class="text-xs font-mono text-brand-400 uppercase tracking-widest">Background &amp; Focus</span>
+                    <h2 class="text-2xl font-bold text-white">Engineering Rigour &amp; Specialisation</h2>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Graduating with a BEng (Hons) in Aeronautical Engineering (2:1) from the University of Salford, I built a strong academic foundation in aerospace systems, fluid mechanics, and structural mechanics.
+                    </p>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        My coursework and practical labs heavily emphasised bridging theoretical aerodynamics with real-world CAD modeling (SolidWorks) and wind tunnel validation.
+                    </p>
+                </div>
+                
+                <!-- Right Column: 6 Fact Boxes Grid -->
+                <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    
+                    <!-- Fact Box 1 -->
+                    <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-800">
+                        <div class="text-brand-400 text-2xl font-bold font-mono mb-1">2:1</div>
+                        <div class="text-xs font-semibold text-white">BEng (Hons) Degree</div>
+                        <div class="text-[11px] text-slate-400 mt-1">Aeronautical Engineering</div>
+                    </div>
+
+                    <!-- Fact Box 2 -->
+                    <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-800">
+                        <div class="text-brand-400 text-2xl font-bold font-mono mb-1">82%</div>
+                        <div class="text-xs font-semibold text-white">Final Project Part 1</div>
+                        <div class="text-[11px] text-slate-400 mt-1">Literature-based investigation into auxiliary control additions for improved system stabilisation.</div>
+                    </div>
+
+                    <!-- Fact Box 3 -->
+                    <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-800">
+                        <div class="text-brand-400 text-2xl font-bold font-mono mb-1">75%</div>
+                        <div class="text-xs font-semibold text-white">Wing Prototype</div>
+                        <div class="text-[11px] text-slate-400 mt-1">CAD to Wind Tunnel Testing. Led manufacturing phase for group wing prototype project.</div>
+                    </div>
+
+                    <!-- Fact Box 4 -->
+                    <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-800">
+                        <div class="text-brand-400 text-2xl font-bold font-mono mb-1">Salford Racing</div>
+                        <div class="text-xs font-semibold text-white">Formula Student</div>
+                        <div class="text-[11px] text-slate-400 mt-1">Aerodynamics Team-Exhaust. </div>
+                    </div>
+
+                    <!-- Fact Box 5 -->
+                    <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-800">
+                        <div class="text-brand-400 text-2xl font-bold font-mono mb-1">CFD/FEA &amp; MATLAB </div>
+                        <div class="text-xs font-semibold text-white">Simulation Tools</div>
+                        <div class="text-[11px] text-slate-400 mt-1">Ansys Fluent, SolidWorks/ Fusion360 &amp; MATLAB</div>
+                    </div>
+
+                    <!-- Fact Box 6 -->
+                    <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-800">
+                        <div class="text-brand-400 text-2xl font-bold font-mono mb-1">75%</div>
+                        <div class="text-xs font-semibold text-white">Final Year Project Part 2</div>
+                        <div class="text-[11px] text-slate-400 mt-1">Designed FNN code and implemented in system simulation &amp; testing.</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharon Perera Makawitage — Aeronautical Engineer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN for Interactive Graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- KEY PROJECTS SECTION -->
+    <section id="projects" class="py-20 px-4 max-w-7xl mx-auto space-y-16">
+        
+        <div class="text-center space-y-3">
+            <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">Technical Showcase</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white">Featured Engineering Case Studies</h2>
+            <p class="text-slate-400 text-sm max-w-xl mx-auto">Explore interactive simulations, telemetry curves, and manufacturing lifecycles from core projects.</p>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- CASE STUDY 1: TRMS & HYBRID FNN CONTROL -->
+        <!-- ========================================== -->
+        <div class="glass-card rounded-2xl p-8 lg:p-12 border border-slate-800 space-y-8 bg-slate-900/40 backdrop-blur-md">
+            
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6">
+                <div class="space-y-1">
+                    <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">Final Year Project (Part 1 &amp; 2)</span>
+                    <h3 class="text-2xl font-bold text-white">Twin Rotor MIMO System Stabilisation</h3>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-3 py-1 bg-slate-900 border border-slate-800 rounded-full text-xs font-mono text-slate-300">MATLAB / Simulink</span>
+                    <span class="px-3 py-1 bg-slate-900 border border-slate-800 rounded-full text-xs font-mono text-slate-300">Control Systems</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 text-sm text-slate-400 leading-relaxed">
+                <div class="space-y-2 p-4 bg-slate-950/40 rounded-xl border border-slate-800/60">
+                    <h4 class="text-xs font-mono uppercase text-slate-200 font-bold">1. Literature &amp; PD Baseline</h4>
+                    <p>Investigated classical Proportional-Derivative (PD) dynamic control under non-linear cross-coupling constraints.</p>
+                </div>
+                <div class="space-y-2 p-4 bg-slate-950/40 rounded-xl border border-slate-800/60">
+                    <h4 class="text-xs font-mono uppercase text-slate-200 font-bold">2. FNN Architecture</h4>
+                    <p>Designed and coded a hybrid Interval Type-2 Fuzzy Neural Network (IT2-FNN) adaptive online controller.</p>
+                </div>
+                <div class="space-y-2 p-4 bg-slate-950/40 rounded-xl border border-slate-800/60">
+                    <h4 class="text-xs font-mono uppercase text-slate-200 font-bold">3. Key Results</h4>
+                    <p>Eliminated 50% pitch overshoot, yielding a <strong class="text-cyan-400">48.5% total error reduction</strong>.</p>
+                </div>
+            </div>
+
+            <!-- Interactive Control Simulation Panel with Chart -->
+            <div class="p-6 sm:p-10 bg-slate-950/50 rounded-2xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wider font-mono">Select Controller State:</h4>
+                    <div class="space-y-3">
+                        <button id="btn-pd" onclick="switchControlSim('pd')" class="w-full text-left p-4 rounded-xl border border-amber-500/30 bg-amber-500/20 text-amber-400 transition-all font-mono text-xs">
+                            <div class="font-bold">1. Baseline PID / PD Response</div>
+                            <div class="text-[11px] text-slate-400 mt-1">Standard linear control with significant overshoot.</div>
+                        </button>
+                        <button id="btn-fnn" onclick="switchControlSim('fnn')" class="w-full text-left p-4 rounded-xl border border-slate-800 bg-slate-900 text-slate-400 hover:text-white transition-all font-mono text-xs">
+                            <div class="font-bold">2. Optimised IT2-FNN Response</div>
+                            <div class="text-[11px] text-slate-400 mt-1">Hybrid FNN assistant with zero overshoot.</div>
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-3 text-xs font-mono pt-2">
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
+                            <span class="text-slate-500 block text-[10px]">Peak Overshoot</span>
+                            <span id="stat-overshoot" class="text-amber-400 font-bold text-xs sm:text-sm">Peak 0.60 rad</span>
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
+                            <span class="text-slate-500 block text-[10px]">Settling Time</span>
+                            <span id="stat-settling" class="text-amber-400 font-bold text-xs sm:text-sm">45.0s</span>
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
+                            <span class="text-slate-500 block text-[10px]">State</span>
+                            <span id="stat-damping" class="text-amber-400 font-bold text-xs sm:text-sm">Underdamped</span>
+                        </div>
+                    </div>
+
+                    <button onclick="openReport('trms')" class="w-full py-3 px-4 bg-slate-900 hover:bg-slate-800 border border-cyan-500/30 text-cyan-400 font-mono text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2">
+                        <span>View Technical Report &amp; Mathematics</span>
+                        <span>&rarr;</span>
+                    </button>
+                </div>
+
+                <!-- Chart Canvas Container -->
+                <div class="lg:col-span-7 relative" style="height: 320px;">
+                    <canvas id="trmsChart"></canvas>
+                </div>
+
+            </div>
+        </div>
+
+
+<!-- ========================================== -->
+        <!-- CASE STUDY 2: SALFORD RACING HELMHOLTZ RESONATOR -->
+        <!-- ========================================== -->
+        <div class="glass-card rounded-2xl p-8 lg:p-12 border border-slate-800 space-y-8 bg-slate-900/40 backdrop-blur-md">
+            
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6">
+                <div class="space-y-1">
+                    <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">Formula Student Case Study</span>
+                    <h3 class="text-2xl font-bold text-white">Salford Racing &mdash; Intake Helmholtz Resonator</h3>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-3 py-1 bg-slate-900 border border-slate-800 rounded-full text-xs font-mono text-slate-300">Acoustic Tuning</span>
+                    <span class="px-3 py-1 bg-slate-900 border border-slate-800 rounded-full text-xs font-mono text-slate-300">Gas Dynamics</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 text-sm text-slate-400 leading-relaxed">
+                <div class="space-y-2 p-4 bg-slate-950/40 rounded-xl border border-slate-800/60">
+                    <h4 class="text-xs font-mono uppercase text-slate-200 font-bold">1. Acoustic Modeling</h4>
+                    <p>Calculated precise cavity volumes and neck geometry to target specific engine breathing frequencies.</p>
+                </div>
+                <div class="space-y-2 p-4 bg-slate-950/40 rounded-xl border border-slate-800/60">
+                    <h4 class="text-xs font-mono uppercase text-slate-200 font-bold">2. Packaging Integration</h4>
+                    <p>Designed spatial routing configurations to fit tightly within strict chassis and bodywork constraints.</p>
+                </div>
+                <div class="space-y-2 p-4 bg-slate-950/40 rounded-xl border border-slate-800/60">
+                    <h4 class="text-xs font-mono uppercase text-slate-200 font-bold">3. Key Results</h4>
+                    <p>Smoothed mid-range torque dips, yielding optimal <strong class="text-cyan-400">volumetric efficiency gains</strong>.</p>
+                </div>
+            </div>
+
+            <!-- Spec Grid Section  -->
+            <div class="p-6 sm:p-10 bg-slate-950/50 rounded-2xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-12 space-y-6">
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wider font-mono">System Parameters &amp; Deliverables:</h4>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono">
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
+                            <span class="text-slate-500 block text-[10px]">Target Component</span>
+                            <span class="text-cyan-400 font-bold text-xs sm:text-sm">Intake Manifold</span>
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
+                            <span class="text-slate-500 block text-[10px]">Primary Objective</span>
+                            <span class="text-cyan-400 font-bold text-xs sm:text-sm">Torque Smoothing</span>
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
+                            <span class="text-slate-500 block text-[10px]">Analysis Focus</span>
+                            <span class="text-cyan-400 font-bold text-xs sm:text-sm">Vol. Efficiency</span>
+                        </div>
+                        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
+                            <span class="text-slate-500 block text-[10px]">Compliance</span>
+                            <span class="text-cyan-400 font-bold text-xs sm:text-sm">FS Regulations</span>
+                        </div>
+                    </div>
+
+                    <button onclick="openReport('salford')" class="w-full py-3 px-4 bg-slate-900 hover:bg-slate-800 border border-cyan-500/30 text-cyan-400 font-mono text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2">
+                        <span>View Technical Report &amp; Mathematics</span>
+                        <span>&rarr;</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+      
+      
+        <!-- ========================================== -->
+        <!-- CASE STUDY 3: SUBSONIC WING PROTOTYPE -->
+        <!-- ========================================== -->
+        <div class="glass-card rounded-2xl p-8 lg:p-12 border border-slate-800 space-y-8 bg-slate-900/40 backdrop-blur-md">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6">
+                <div class="space-y-1">
+                    <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">Group Project (Achieved 75%)</span>
+                    <h3 class="text-2xl font-bold text-white">Subsonic Wing Prototype Design for Fabrication</h3>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="px-3 py-1 bg-slate-900 border border-slate-800 rounded-full text-xs font-mono text-slate-300">SolidWorks</span>
+                    <span class="px-3 py-1 bg-slate-900 border border-slate-800 rounded-full text-xs font-mono text-slate-300">Composites &amp; Waterjet</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-sm text-slate-400 leading-relaxed">
+                <div class="space-y-4">
+                    <p>As the <strong class="text-white">Manufacturing Lead</strong>, I translated our aerodynamic concept into a test-ready prototype, optimizing geometry for 3D printing and composite layups.</p>
+                </div>
+                <div class="space-y-4">
+                    <p>Operated precision workshop tools like waterjet cutters to ensure dimensional accuracy prior to wind tunnel trials at Salford University.</p>
+                </div>
+            </div>
+
+            <div class="p-6 bg-slate-950/50 rounded-2xl border border-slate-800 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-4 bg-slate-900/80 rounded-xl border border-slate-800 space-y-2">
+                    <div class="text-cyan-400 font-mono font-bold text-xs">01 / DFM &amp; 3D PRINTING</div>
+                    <h4 class="text-white font-semibold text-sm">Additive Setup</h4>
+                    <p class="text-xs text-slate-400">Adjusted CAD geometry for additive parameters.</p>
+                </div>
+                <div class="p-4 bg-slate-900/80 rounded-xl border border-slate-800 space-y-2">
+                    <div class="text-cyan-400 font-mono font-bold text-xs">02 / FABRICATION</div>
+                    <h4 class="text-white font-semibold text-sm">Waterjet &amp; Layups</h4>
+                    <p class="text-xs text-slate-400">Executed composite skin reinforcements.</p>
+                </div>
+                <div class="p-4 bg-slate-900/80 rounded-xl border border-slate-800 space-y-2">
+                    <div class="text-cyan-400 font-mono font-bold text-xs">03 / INTEGRATION</div>
+                    <h4 class="text-white font-semibold text-sm">Internal Mounts</h4>
+                    <p class="text-xs text-slate-400">Built to withstand wind tunnel forces.</p>
+                </div>
+            </div>
+
+            <button onclick="openReport('wing')" class="w-full sm:w-auto py-3 px-6 bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-cyan-400 text-cyan-400 font-mono text-xs font-bold rounded-xl transition-all">
+                View Wing Manufacturing Report &rarr;
+            </button>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- CASE STUDY 4: FEA STRESS ANALYSIS -->
+        <!-- ========================================== -->
+        <div class="glass-card rounded-2xl p-8 lg:p-12 border border-slate-800 space-y-8 bg-slate-900/40 backdrop-blur-md">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6">
+                <div class="space-y-1">
+                    <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">Structural Mechanics Case Study</span>
+                    <h3 class="text-2xl font-bold text-white">Ansys APDL Plate with a Hole FEA</h3>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="px-3 py-1 bg-slate-900 border border-slate-800 rounded-full text-xs font-mono text-slate-300">Ansys APDL</span>
+                    <span class="px-3 py-1 bg-slate-900 border border-slate-800 rounded-full text-xs font-mono text-slate-300">SOLID182 / 183</span>
+                </div>
+            </div>
+
+            <p class="text-sm text-slate-400 leading-relaxed">
+                Evaluated stress concentration and deflection fields around a circular hole using quarter-symmetry geometry across 8 simulation runs.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 font-mono text-xs">
+                <div class="p-4 bg-slate-950/60 rounded-xl border border-slate-800 space-y-1">
+                    <span class="text-slate-500 text-[10px] block">Element Types</span>
+                    <span class="text-cyan-400 font-bold text-sm">SOLID182 / 183</span>
+                </div>
+                <div class="p-4 bg-slate-950/60 rounded-xl border border-slate-800 space-y-1">
+                    <span class="text-slate-500 text-[10px] block">Model Type</span>
+                    <span class="text-cyan-400 font-bold text-sm">Quarter Symmetry</span>
+                </div>
+                <div class="p-4 bg-slate-950/60 rounded-xl border border-slate-800 space-y-1">
+                    <span class="text-slate-500 text-[10px] block">Mesh Tiers</span>
+                    <span class="text-cyan-400 font-bold text-sm">4 Divisions</span>
+                </div>
+                <div class="p-4 bg-slate-950/60 border border-emerald-500/30 bg-emerald-500/10 space-y-1 rounded-xl">
+                    <span class="text-emerald-400/70 text-[10px] block">Min Error</span>
+                    <span class="text-emerald-400 font-bold text-sm">0.399%</span>
+                </div>
+            </div>
+
+            <button onclick="openReport('fea')" class="w-full sm:w-auto py-3 px-6 bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-cyan-400 text-cyan-400 font-mono text-xs font-bold rounded-xl transition-all">
+                View FEA Convergence Report &rarr;
+            </button>
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================== -->
+    <!-- SKILLS SECTION -->
+    <!-- ========================================== -->
+    <section id="skills" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="glass-card rounded-2xl p-8 lg:p-12 border border-slate-800 space-y-10 bg-slate-900/40 backdrop-blur-md">
+            <div class="text-center space-y-2">
+                <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">Capabilities</span>
+                <h2 class="text-3xl font-bold text-white">Engineering Technical Skills</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-sm font-mono font-bold text-cyan-400">Software &amp; Simulation</h3>
+                    <ul class="space-y-2.5 text-xs font-mono text-slate-300">
+                        <li class="p-2.5 bg-slate-900 rounded border border-slate-800">MATLAB &amp; Simulink</li>
+                        <li class="p-2.5 bg-slate-900 rounded border border-slate-800">Ansys Fluent (CFD/FEA)</li>
+                        <li class="p-2.5 bg-slate-900 rounded border border-slate-800">SolidWorks / Fusion 360</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-sm font-mono font-bold text-emerald-400">Testing &amp; Manufacturing</h3>
+                    <ul class="space-y-2.5 text-xs font-mono text-slate-300">
+                        <li class="p-2.5 bg-slate-900 rounded border border-slate-800">Wind Tunnel Testing</li>
+                        <li class="p-2.5 bg-slate-900 rounded border border-slate-800">CNC Setup &amp; Waterjet</li>
+                        <li class="p-2.5 bg-slate-900 rounded border border-slate-800">3D Printing</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-sm font-mono font-bold text-purple-400">Engineering Theory</h3>
+                    <ul class="space-y-2.5 text-xs font-mono text-slate-300">
+                        <li class="p-2.5 bg-slate-900 rounded border border-slate-800">Aerodynamics &amp; Fluids</li>
+                        <li class="p-2.5 bg-slate-900 rounded border border-slate-800">Aircraft Structures</li>
+                        <li class="p-2.5 bg-slate-900 rounded border border-slate-800">Flight Systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- CONTACT SECTION -->
+    <!-- ========================================== -->
+    <section id="contact" class="py-20 px-4 max-w-4xl mx-auto">
+        <div class="glass-card rounded-2xl p-8 lg:p-12 border border-slate-800 text-center space-y-8 bg-slate-900/40 backdrop-blur-md">
+            <div class="space-y-3">
+                <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">Get In Touch</span>
+                <h2 class="text-3xl font-bold text-white">Let's Connect for Engineering Opportunities</h2>
+            </div>
+
+            <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4 text-left max-w-lg mx-auto">
+                <div>
+                    <label class="block text-xs font-mono text-slate-400 mb-1">Your Name</label>
+                    <input type="text" required placeholder="Hiring Manager" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-mono text-slate-400 mb-1">Your Email</label>
+                    <input type="email" required placeholder="name@company.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-mono text-slate-400 mb-1">Message</label>
+                    <textarea rows="4" required placeholder="Discussion about role..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-500"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold transition shadow-lg shadow-cyan-500/20">
+                    Send Message
+                </button>
+            </form>
+            <div id="formSuccess" class="hidden p-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
+                Message received! Thank you for reaching out.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER -->
+    <!-- ========================================== -->
+    <footer class="py-8 border-t border-slate-900 text-center text-xs font-mono text-slate-500">
+        <p>&copy; 2026 Sharon Navodhi Perera Makawitage. BEng (Hons) Aeronautical Engineering.</p>
+    </footer>
+
+<!-- ========================================== -->
+    <!-- TECHNICAL REPORT MODAL OVERLAY -->
+    <!-- ========================================== -->
+    <div id="project-modal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 hidden flex items-center justify-center p-4 overflow-y-auto">
+        <div class="glass-card rounded-2xl max-w-3xl w-full border border-slate-800 p-8 pt-14 relative my-8 bg-slate-900 shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white text-xl border border-slate-700 transition-all shadow-md">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- JAVASCRIPT LOGIC (CHART & MODALS) -->
+    <!-- ========================================== -->
+    <script>
+      let trmsChartInstance = null;
+
+      // Initialize TRMS Chart on Page Load
+      document.addEventListener("DOMContentLoaded", function() {
+        const canvasElement = document.getElementById('trmsChart');
+        if (!canvasElement) return;
+        
+        const ctx = canvasElement.getContext('2d');
+        
+        trmsChartInstance = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ['0s', '5s', '10s', '15s', '20s', '25s', '30s', '35s', '40s', '45s'],
+            datasets: [
+              {
+                label: 'Baseline PD Response',
+                data: [0.0, 0.4, 0.6, 0.45, 0.32, 0.28, 0.25, 0.22, 0.21, 0.20],
+                borderColor: '#f59e0b', 
+                backgroundColor: 'rgba(245, 158, 11, 0.1)',
+                borderWidth: 2,
+                tension: 0.3,
+                fill: true
+              },
+              {
+                label: 'Target Setpoint',
+                data: [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2],
+                borderColor: 'rgba(148, 163, 184, 0.4)',
+                borderWidth: 1.5,
+                borderDash: [5, 5],
+                pointRadius: 0,
+                fill: false
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              x: { grid: { color: '#1e293b' }, ticks: { color: '#64748b' } },
+              y: { grid: { color: '#1e293b' }, ticks: { color: '#64748b' }, min: 0, max: 0.7 }
+            },
+            plugins: { legend: { display: false } }
+          }
+        });
+      });
+
+      // Controller switcher function for TRMS chart and metrics
+      function switchControlSim(type) {
+        const btnPd = document.getElementById('btn-pd');
+        const btnFnn = document.getElementById('btn-fnn');
+        
+        const statOvershoot = document.getElementById('stat-overshoot');
+        const statSettling  = document.getElementById('stat-settling');
+        const statDamping   = document.getElementById('stat-damping');
+
+        if (!trmsChartInstance) return;
+
+        if (type === 'pd') {
+          btnPd.className = "w-full text-left p-4 rounded-xl border border-amber-500/30 bg-amber-500/20 text-amber-400 transition-all font-mono text-xs";
+          btnFnn.className = "w-full text-left p-4 rounded-xl border border-slate-800 bg-slate-900 text-slate-400 hover:text-white transition-all font-mono text-xs";
+          
+          statOvershoot.innerHTML = "Peak 0.60 rad";
+          statOvershoot.className = "text-amber-400 font-bold text-xs sm:text-sm";
+          
+          statSettling.innerHTML = "45.0s";
+          statSettling.className = "text-amber-400 font-bold text-xs sm:text-sm";
+          
+          statDamping.innerHTML = "Underdamped";
+          statDamping.className = "text-amber-400 font-bold text-xs sm:text-sm";
+          
+          trmsChartInstance.data.datasets[0].label = 'Baseline PD Response';
+          trmsChartInstance.data.datasets[0].data = [0.0, 0.4, 0.6, 0.45, 0.32, 0.28, 0.25, 0.22, 0.21, 0.20];
+          trmsChartInstance.data.datasets[0].borderColor = '#f59e0b';
+          trmsChartInstance.data.datasets[0].backgroundColor = 'rgba(245, 158, 11, 0.1)';
+          trmsChartInstance.update();
+
+        } else {
+          btnFnn.className = "w-full text-left p-4 rounded-xl border border-cyan-500/30 bg-cyan-500/20 text-cyan-400 transition-all font-mono text-xs";
+          btnPd.className = "w-full text-left p-4 rounded-xl border border-slate-800 bg-slate-900 text-slate-400 hover:text-white transition-all font-mono text-xs";
+          
+          statOvershoot.innerHTML = "48.5% Error";
+          statOvershoot.className = "text-cyan-400 font-bold text-xs sm:text-sm";
+          
+          statSettling.innerHTML = "12.5s";
+          statSettling.className = "text-cyan-400 font-bold text-xs sm:text-sm";
+          
+          statDamping.innerHTML = "Critical";
+          statDamping.className = "text-cyan-400 font-bold text-xs sm:text-sm";
+          
+          trmsChartInstance.data.datasets[0].label = 'Optimised IT2-FNN Response';
+          trmsChartInstance.data.datasets[0].data = [0.0, 0.15, 0.19, 0.20, 0.20, 0.20, 0.20, 0.20, 0.20, 0.20];
+          trmsChartInstance.data.datasets[0].borderColor = '#06b6d4'; 
+          trmsChartInstance.data.datasets[0].backgroundColor = 'rgba(6, 182, 212, 0.1)';
+          trmsChartInstance.update();
+        }
+      }
+
+      // Modal Content Dictionary for all projects
+      const projectReports = {
+        trms: `
+          <div class="space-y-6">
+            <div class="border-b border-slate-800 pb-4">
+              <span class="text-xs font-mono text-cyan-400">Full Case Study &mdash; Control Systems</span>
+              <h2 class="text-2xl font-bold text-white mt-1">Twin Rotor MIMO System Adaptive FNN Control</h2>
+            </div>
+            
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">1. Problem Statement &amp; Context:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                The Twin Rotor MIMO System (TRMS) is a highly unstable platform characterised by severe non-linear dynamics, intense pitch-yaw cross-coupling, and high susceptibility to external wind disturbances. Conventional Proportional-Derivative (PID) fixed-gain controllers prove inadequate for complex trajectories, exhibiting heavy transient overshoot (~50%), phase lag, and an inability to adapt to sharp operational shifts. Furthermore, initial hybrid testing revealed a structural conflict: traditional integral action masks system non-linearities, leaving the neural network passive.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">2. Project Goal &amp; Aim:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                The primary objective was to design, implement, and evaluate a robust hybrid PD plus Interval Type-2 Fuzzy Neural Network (T2-FNN) architecture. This project aimed to bridge the gap between classical stability and adaptive intelligence, utilising neuro-fuzzy augmentation to neutralise non-linear coupling, eliminate steady-state error, and achieve superior disturbance rejection without manual gain re-tuning.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">3. Technical Execution &amp; Methodology:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Mathematical Modeling:</strong> Derived non-linear state-space equations via Euler-Lagrange dynamics and established MATLAB/Simulink performance baselines.</p>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Architecture Refinement:</strong> Transitioned from a standard PID+FNN model to a streamlined PD+FNN structure, granting the FNN full control authority over steady-state compensation.</p>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Advanced Adaptation:</strong> Developed a 5&times;5 Gaussian membership rule base featuring a Footprint of Uncertainty (FOU) to manage sensor ambiguity, alongside heuristic switching logic and velocity-dependent damping to eliminate high-frequency chattering.</p>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Stability Management:</strong> Integrated a sigma-leak term into the gradient descent weight update law to prevent long-term synaptic weight drift.</p>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Hardware Validation:</strong> Deployed and validated simulation models against real-world physical laboratory hardware inside a subsonic wind tunnel under active 5&ndash;7 m/s wind disturbances.</p>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">4. Results &amp; Performance:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                The enhanced PD + T2-FNN successfully eliminated the large ~50% overshoot observed in the baseline PID response, achieving near-zero steady-state error and significantly faster recovery times during dual-impulse and sine wave tracking tests. Real-time hardware implementation confirmed that the velocity-dependent learning rate and heuristic switching logic effectively suppressed high-frequency chattering and actuator strain caused by sensor jitter.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">5. Conclusions:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                This study demonstrates that replacing deterministic, fixed-gain architectures with an adaptive neuro-fuzzy framework is vital for controlling complex MIMO systems under unpredictable operating conditions. By successfully coupling interval type-2 logic with online gradient descent adaptation, the system achieves a robust balance of high-speed precision and stability, proving superior to traditional linear control schemes.
+              </p>
+            </div>
+          </div>
+        `,
+        salford: `
+          <div class="space-y-6">
+            <div class="border-b border-slate-800 pb-4">
+              <span class="text-xs font-mono text-cyan-400">Full Case Study &mdash; Formula Student</span>
+              <h2 class="text-2xl font-bold text-white mt-1">Salford Racing &mdash; Chassis &amp; Vehicle Dynamics</h2>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">Comprehensive review of torsional rigidity calculations, ANSYS structural FEA boundary conditions under 3G braking and 2.5G cornering loads, and factor of safety criteria.</p>
+          </div>
+        `,
+        wing: `
+          <div class="space-y-6">
+            <div class="border-b border-slate-800 pb-4">
+              <span class="text-xs font-mono text-cyan-400">Full Case Study &mdash; Manufacturing &amp; Aerodynamics</span>
+              <h2 class="text-2xl font-bold text-white mt-1">Subsonic Wing Prototype Fabrication</h2>
+            </div>
+            
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">1. Project Context &amp; Aim:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Designed, modeled, and manufactured a scaled wing prototype representative of a commercial transport aircraft operating in the transonic regime (Mach 0.75, 3500 km range, 200 passengers). The primary aim was to adapt full-scale aircraft parameters for low-speed subsonic wind tunnel testing, focusing heavily on DFM (Design for Manufacturing) constraints, internal instrumentation integration, and composite skin fabrication.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">2. Aerodynamic Design &amp; Scaling Methodology:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Evaluated three sizing approaches, ultimately adopting Method 1 (benchmarked against the Airbus A310-300). Selected the <strong>NACA 23012 aerofoil</strong> due to its high manufacturability, gentle stall characteristics, and well-documented performance compared to overly thin, complex supercritical sections. The full-scale geometry was scaled down via a 1:45 ratio and adjusted using BambuLab slicer settings to fit within the wind tunnel test section while maintaining a blockage ratio under 5%.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">3. Prototyping Iterations &amp; Design Evolution:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                The manufacturing process required three distinct design iterations to resolve practical integration challenges:
+              </p>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Iteration 1:</strong> Addressed missing internal pressure channels and uniform tap positioning, highlighting early instrumentation constraints.</p>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Iteration 2:</strong> Integrated four internal pressure channels through the mid-section, though routing proved impractical for tubing attachment.</p>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Iteration 3:</strong> Optimized pressure channel routing along the bottom surface of the wing and applied precise 25% scale down tolerances (accounting for 3D printer shrinkage) for flawless wind tunnel integration.</p>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">4. Personal Execution &amp; Manufacturing Contributions:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Led key aspects of physical fabrication, mechanical assembly, and tooling development:
+              </p>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Water-Jetted Pitch-Control Mechanism:</strong> Designed and manufactured custom pitch-control components out of thin aluminium sheets using an OMAX waterjet cutter. Shaped the components to precisely match the mid-span aerofoil profile, preventing flow separation and aerodynamic interference while maintaining strict hole spacing and dimensional tolerances.</p>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Dowel-Pin Structural Alignment:</strong> Engineered a robust alignment and joining system using a combination of cut/sanded wooden dowels ($6\text{ mm}$ diameter, $15\text{ mm}$ depth) and steel dowels ($4\text{ mm}$ diameter) to structurally connect the 3D-printed PLA wing segments with high structural rigidity.</p>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Fibreglass Wet Lay-up &amp; Surface Finishing:</strong> Selected a double-layer fibreglass reinforcement method over direct carbon fibre lamination[cite: 202]. Sanded the 3D-printed PLA core, applied alternating layers of glass tissue with epoxy resin, and cured for 24 hours to seal layer lines, eliminate surface roughness, and establish a durable aerodynamic shell.</p>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">5. Conclusions &amp; Takeaways:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Successfully delivered a fully instrumented, structurally sound wing prototype featuring operational pressure taps and integrated pitch control. The project bridged theoretical aerodynamics with hands-on composite manufacturing, proving that careful balance between rapid 3D prototyping, waterjet precision machining, and wet lay-up composites yields reliable experimental hardware within academic constraints.
+              </p>
+            </div>
+          </div>
+        `,
+        fea: `
+          <div class="space-y-6">
+            <div class="border-b border-slate-800 pb-4">
+              <span class="text-xs font-mono text-cyan-400">Full Case Study &mdash; Structural Mechanics</span>
+              <h2 class="text-2xl font-bold text-white mt-1">Static Analysis of a Plate with a Hole using FEA</h2>
+            </div>
+            
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">1. Problem Statement &amp; Context:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Structural discontinuities like fastener and access holes create severe local stress concentrations, a critical consideration in aircraft fuselage design highlighted by historical fatigue failures (e.g., De Havilland Comet). While classical analytical solutions like Kirsch's equations provide baselines, they fail to account for finite widths and complex boundaries. Accurately capturing these steep stress gradients requires robust numerical modeling and careful evaluation of element formulations.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">2. Project Goal &amp; Aim:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                To conduct a comprehensive comparative finite element analysis using ANSYS APDL to evaluate stress and deflection around a circular cutout in a metal plate. The study aimed to assess the convergence properties, accuracy, and inter-element equilibrium of 4-node linear elements (SOLID182) versus 8-node quadratic isoparametric elements (SOLID183) across multiple mesh densities against theoretical calculations.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">3. Technical Execution &amp; Methodology:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Symmetry Modeling:</strong> Constructed a quarter-symmetry plate model in ANSYS APDL, applying perpendicular symmetry constraints ($UX=0$ and $UY=0$) to maximize computational efficiency.</p>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Element Formulations:</strong> Evaluated plane stress models with a $3\text{ mm}$ thickness using linear 4-node (SOLID182) and quadratic 8-node (SOLID183) elements.</p>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Boundary Loading:</strong> Applied a uniform tensile pressure load ($P = 50\text{ N/mm}^2$, equivalent to a $150\text{ N/mm}$ load distributed across $3\text{ mm}$ thickness).</p>
+              <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Mesh Convergence &amp; Error Analysis:</strong> Performed convergence studies across four mesh densities (1, 2, 4, and 8 element divisions), quantifying solution quality via inter-element stress equilibrium percentage error analysis.</p>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">4. Results &amp; Performance:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                The peak FEA stress ($\sigma_{max,FEA} = 255.10\text{ MPa}$) showed exceptional agreement with the theoretical target ($253.91\text{ MPa}$), yielding a minimal validation error of $0.47\%$. The 8-node quadratic element successfully achieved rapid convergence, reducing inter-element error down to $0.40\%$ at a mesh density of 8. Conversely, the 4-node linear element stalled at a high error of $16.45\%$ due to straight-edge constraints and linear shape function limitations, failing standard reliability thresholds.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">5. Conclusions:</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                The investigation proved that higher-order isoparametric quadratic elements (SOLID183) are essential for accurately modeling curved boundaries and steep stress gradients. To mitigate high stress concentration peaks in engineering applications, geometry modifications such as increased fillet radii or stress-relief auxiliary holes are recommended.
+              </p>
+            </div>
+          </div>
+        `,
+      };
+
+      function openReport(projectId) {
+        const modal = document.getElementById('project-modal');
+        const body = document.getElementById('modal-body');
+        if (!modal || !body) return;
+        
+        body.innerHTML = projectReports[projectId] || '<p>Report details coming soon.</p>';
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        const modal = document.getElementById('project-modal');
+        if (!modal) return;
+        
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        document.getElementById('formSuccess').classList.remove('hidden');
+        document.getElementById('contactForm').reset();
+      }
+    </script>
+</body>
+</html>
