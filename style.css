@@ -1,0 +1,43 @@
+body {
+    background-color: #0B0F17;
+    color: #E2E8F0;
+    font-family: 'Inter', sans-serif;
+}
+
+.grid-pattern {
+    background-image: radial-gradient(rgba(56, 189, 248, 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+.glass-card {
+    background: rgba(17, 24, 39, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card:hover {
+    border-color: rgba(56, 189, 248, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0B0F17;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1F2937;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #38bdf8;
+}
+
+
+#projects {
+  padding-top: 5rem; /* Ensures clearance below your fixed nav bar */
+}
