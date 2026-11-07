@@ -226,69 +226,95 @@ function switchControlSim(type) {
 // 2. MODAL REPORT POPUPS LOGIC (FOR ALL PROJECTS)
 // ==========================================
 const projectReports = {
-  trms: `
-    <div class="space-y-6">
-      <div class="border-b border-slate-800 pb-4">
-        <span class="text-xs font-mono text-cyan-400">Full Case Study &mdash; Control Systems</span>
-        <h2 class="text-2xl font-bold text-white mt-1">Twin Rotor MIMO System Adaptive FNN Control</h2>
-      </div>
+    trms: `
+      <div class="space-y-6">
+        <div class="border-b border-slate-800 pb-4">
+          <span class="text-xs font-mono text-cyan-400">Full Case Study &mdash; Control Systems</span>
+          <h2 class="text-2xl font-bold text-white mt-1">Twin Rotor MIMO System Adaptive FNN Control</h2>
+        </div>
 
-      <div class="space-y-3">
-        <h3 class="text-sm font-mono text-cyan-400 font-bold uppercase">1. Problem Formulation &amp; Non-Linear Dynamics</h3>
-        <p class="text-xs text-slate-300 leading-relaxed">
-          The TRMS mimics helicopter flight dynamics across Pitch and Yaw axes. Strong cross-coupling forces introduce severe cross-axis aerodynamic reaction torques.
-        </p>
-      </div>
+        <div class="space-y-3">
+          <h3 class="text-sm font-mono text-cyan-400 font-bold uppercase">1. Problem Formulation &amp; Non-Linear Dynamics</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            The TRMS mimics helicopter flight dynamics across Pitch and Yaw axes. Strong cross-coupling forces introduce severe cross-axis aerodynamic reaction torques.
+          </p>
+        </div>
 
-      <div class="space-y-3">
-        <h3 class="text-sm font-mono text-cyan-400 font-bold uppercase">2. IT2-FNN Controller Design</h3>
-        <p class="text-xs text-slate-300 leading-relaxed">
-          An Interval Type-2 Fuzzy Neural Network was coded to dynamically adjust scaling factors for proportional and derivative gains online, eliminating non-linear overshoot.
-        </p>
-      </div>
+        <div class="space-y-3">
+          <h3 class="text-sm font-mono text-cyan-400 font-bold uppercase">2. IT2-FNN Controller Design</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            An Interval Type-2 Fuzzy Neural Network was coded to dynamically adjust scaling factors for proportional and derivative gains online, eliminating non-linear overshoot.
+          </p>
+        </div>
 
-      <div class="space-y-3">
-        <h3 class="text-sm font-mono text-cyan-400 font-bold uppercase">3. Quantitative Outcomes</h3>
-        <ul class="list-disc list-inside text-xs text-slate-300 space-y-1 font-mono">
-          <li><strong>Pitch Overshoot:</strong> Reduced from 50% (0.60 rad) to 0.0% (Critically Damped).</li>
-          <li><strong>Error Tracking:</strong> 48.5% total error reduction under square-wave trajectory demands.</li>
-          <li><strong>Settling Time:</strong> Improved from 45.0 seconds to 12.5 seconds.</li>
-        </ul>
-      </div>
-    </div>
-  `,
-  salford: `
-    <div class="space-y-6">
-      <div class="border-b border-slate-800 pb-4">
-        <span class="text-xs font-mono text-cyan-400">Full Case Study &mdash; Formula Student</span>
-        <h2 class="text-2xl font-bold text-white mt-1">Salford Racing &mdash; Chassis &amp; Suspension Dynamics</h2>
-      </div>
+        <!-- Embedded Project Visual -->
+        <div class="overflow-hidden rounded-xl border border-slate-800 bg-slate-950 my-4">
+          <img src="https://i.ibb.co/1GzB5P48/Step-response-and-double-disturbance-of-the-optimised-IT2-FNN-controller-for-pitch-and-yaw.png" alt="Step response and double disturbance of the optimised IT2-FNN controller for pitch and yaw" class="w-full h-auto object-cover">
+          <p class="text-[11px] font-mono text-slate-400 p-3 bg-slate-950/80 border-t border-slate-800/80 text-center">
+            Step response and double disturbance of the optimised IT2-FNN controller for pitch and yaw.
+          </p>
+        </div>
 
-      <div class="space-y-3">
-        <h3 class="text-sm font-mono text-cyan-400 font-bold uppercase">1. Competition Requirements</h3>
-        <p class="text-xs text-slate-300 leading-relaxed">
-          Designed within strict Formula Student structural regulations. Primary target was optimizing torsional stiffness-to-weight ratio to improve cornering stability.
-        </p>
+        <div class="space-y-3">
+          <h3 class="text-sm font-mono text-cyan-400 font-bold uppercase">3. Quantitative Outcomes</h3>
+          <ul class="list-disc list-inside text-xs text-slate-300 space-y-1 font-mono">
+            <li><strong>Pitch Overshoot:</strong> Reduced from 50% (0.60 rad) to 0.0% (Critically Damped).</li>
+            <li><strong>Error Tracking:</strong> 48.5% total error reduction under square-wave trajectory demands.</li>
+            <li><strong>Settling Time:</strong> Improved from 45.0 seconds to 12.5 seconds.</li>
+          </ul>
+        </div>
       </div>
+    `,
+    salford: `
+      <div class="space-y-6">
+        <div class="border-b border-slate-800 pb-4">
+          <span class="text-xs font-mono text-cyan-400">Full Case Study &mdash; Formula Student</span>
+          <h2 class="text-2xl font-bold text-white mt-1">Salford Racing &mdash; Chassis &amp; Suspension Dynamics</h2>
+        </div>
 
-      <div class="space-y-3">
-        <h3 class="text-sm font-mono text-cyan-400 font-bold uppercase">2. Structural FEA &amp; Load Cases</h3>
-        <p class="text-xs text-slate-300 leading-relaxed">
-          Applied high-stress boundary conditions in ANSYS, simulating peak load cases including 3G longitudinal braking and 2.5G lateral cornering.
-        </p>
-      </div>
+        <div class="space-y-3">
+          <h3 class="text-sm font-mono text-cyan-400 font-bold uppercase">1. Competition Requirements</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Designed within strict Formula Student structural regulations. Primary target was optimizing torsional stiffness-to-weight ratio to improve cornering stability.
+          </p>
+        </div>
 
-      <div class="space-y-3">
-        <h3 class="text-sm font-mono text-cyan-400 font-bold uppercase">3. Results &amp; Manufacturing</h3>
-        <ul class="list-disc list-inside text-xs text-slate-300 space-y-1 font-mono">
-          <li><strong>Minimum Factor of Safety:</strong> 1.65 achieved under maximum load vector.</li>
-          <li><strong>Mass Optimization:</strong> Achieved an 11.5% mass reduction on suspension mounting tabs.</li>
-          <li><strong>Compliance:</strong> Passed all technical inspection safety checks at competition.</li>
-        </ul>
+        <div class="space-y-3">
+          <h3 class="text-sm font-mono text-cyan-400 font-bold uppercase">2. Structural FEA &amp; Load Cases</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Applied high-stress boundary conditions in ANSYS, simulating peak load cases including 3G longitudinal braking and 2.5G lateral cornering.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="text-sm font-mono text-cyan-400 font-bold uppercase">3. Results &amp; Manufacturing</h3>
+          <ul class="list-disc list-inside text-xs text-slate-300 space-y-1 font-mono">
+            <li><strong>Minimum Factor of Safety:</strong> 1.65 achieved under maximum load vector.</li>
+            <li><strong>Mass Optimization:</strong> Achieved an 11.5% mass reduction on suspension mounting tabs.</li>
+            <li><strong>Compliance:</strong> Passed all technical inspection safety checks at competition.</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  `
+    `
 };
+
+function openReport(reportId) {
+    // 1. Hide all modal contents
+    const contents = document.querySelectorAll('.modal-content');
+    contents.forEach(el => {
+        el.classList.add('hidden');
+        el.style.display = 'none';
+    });
+
+    // 2. Show the target modal content
+    const target = document.getElementById('report-' + reportId);
+    if (target) {
+        target.classList.remove('hidden');
+        target.style.display = 'block';
+    } else {
+        console.error("Could not find modal content with id: report-" + reportId);
+    }
+}
 
 
 
@@ -310,4 +336,5 @@ function openReport(reportId) {
         console.error("Could not find modal content with id: report-" + reportId);
     }
 
+ 
  
