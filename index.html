@@ -879,6 +879,13 @@ fea: `
             <div class="space-y-2">
               <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">3. Technical Execution &amp; Methodology:</h4>
               <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Symmetry Modeling:</strong> Constructed a quarter-symmetry plate model in ANSYS APDL, applying perpendicular symmetry constraints (UX = 0 and UY = 0) to maximize computational efficiency.</p>
+
+              <div class="overflow-hidden rounded-xl border border-slate-800 bg-slate-950 my-4">
+  <img src="https://i.ibb.co/G343MQFq/Completed-quarter-plate-geometry.png" alt="Completed Quarter-Plate Geometry" class="w-full h-auto object-cover block hover:scale-105 transition-transform duration-300">
+  <p class="text-[11px] font-mono text-slate-400 p-3 text-center">
+    Completed quarter-plate geometry utilising symmetry constraints for computational efficiency.
+  </p>
+</div>
               <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Element Formulations:</strong> Evaluated plane stress models with a 3 mm thickness using linear 4-node (SOLID182) and quadratic 8-node (SOLID183) elements.</p>
               <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Boundary Loading:</strong> Applied a uniform tensile pressure load (P = 50 N/mm<sup>2</sup>, equivalent to a 150 N/mm load distributed across 3 mm thickness).</p>
               <p class="text-xs text-slate-300 leading-relaxed">&bull; <strong>Mesh Convergence &amp; Error Analysis:</strong> Performed convergence studies across four mesh densities (1, 2, 4, and 8 element divisions), quantifying solution quality via inter-element stress equilibrium percentage error analysis.</p>
@@ -889,6 +896,12 @@ fea: `
               <p class="text-xs text-slate-300 leading-relaxed">
                 The peak FEA stress (&sigma;<sub>max,FEA</sub> = 255.10 MPa) showed exceptional agreement with the theoretical target (253.91 MPa), yielding a minimal validation error of 0.47%. The 8-node quadratic element successfully achieved rapid convergence, reducing inter-element error down to 0.40% at a mesh density of 8. Conversely, the 4-node linear element stalled at a high error of 16.45% due to straight-edge constraints and linear shape function limitations, failing standard reliability thresholds.
               </p>
+              <div class="overflow-hidden rounded-xl border border-slate-800 bg-slate-950 my-4">
+  <img src="https://i.ibb.co/tTvLzGrH/Nodal-Solution-for-the-8-node-element-model-with-8-element-division.png" alt="Nodal Solution for the 8-node element model with 8 element division" class="w-full h-auto object-cover block hover:scale-105 transition-transform duration-300">
+  <p class="text-[11px] font-mono text-slate-400 p-3 text-center">
+    Nodal solution contours for the 8-node element model with 8 element divisions showing smooth stress distributions.
+  </p>
+</div>
             </div>
 
             <div class="space-y-2">
@@ -896,6 +909,13 @@ fea: `
               <p class="text-xs text-slate-300 leading-relaxed">
                 The investigation proved that higher-order isoparametric quadratic elements (SOLID183) are essential for accurately modeling curved boundaries and steep stress gradients. To mitigate high stress concentration peaks in engineering applications, geometry modifications such as increased fillet radii or stress-relief auxiliary holes are recommended.
               </p>
+              <div class="overflow-hidden rounded-xl border border-slate-800 bg-slate-950 my-4">
+  <img src="https://i.ibb.co/zTSmhZT7/Mesh-Convergence-and-Percentage-Error-Analysis.png" alt="Mesh Convergence and Percentage Error Analysis" class="w-full h-auto object-cover block hover:scale-105 transition-transform duration-300">
+  <p class="text-[11px] font-mono text-slate-400 p-3 text-center">
+    Mesh convergence and percentage error analysis illustrating solution quality and inter-element stress equilibrium across element densities.
+  </p>
+</div>
+</div>
             </div>
           </div>
         `,
