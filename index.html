@@ -766,12 +766,70 @@
           </div>
         `,
         salford: `
-          <div class="space-y-6">
-            <div class="border-b border-slate-800 pb-4">
-              <span class="text-xs font-mono text-cyan-400">Full Case Study &mdash; Formula Student</span>
-              <h2 class="text-2xl font-bold text-white mt-1">Salford Racing &mdash; Chassis &amp; Vehicle Dynamics</h2>
-            </div>
-                    </div>
+<div class="space-y-6 text-slate-300 text-xs leading-relaxed font-sans">
+  
+  <!-- HEADER & CASE STUDY TITLE -->
+  <div class="border-b border-slate-800 pb-4">
+    <span class="text-xs font-mono text-cyan-400">Full Case Study &mdash; Exhaust Acoustics &amp; Gas Dynamics</span>
+    <h2 class="text-2xl font-bold text-white mt-1">Side-Branch Helmholtz Resonator &mdash; 125 Hz Exhaust Drone Attenuation</h2>
+  </div>
+
+  <!-- SECTION 1: PROBLEM STATEMENT & CONTEXT -->
+  <div class="space-y-2">
+    <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">1. Problem Statement &amp; Context:</h4>
+    <p>
+      High-performance exhaust systems often introduce low-frequency acoustic standing waves inside the cabin, resulting in an intrusive, tiring sound (drone) at cruising RPMs. Traditional reactive mufflers or restrictive baffles eliminate drone by restricting flow, which introduces parasitic backpressure and hurts engine volumetric efficiency (&eta;<sub>v</sub>). To eliminate a prominent 125 Hz drone without choking exhaust gas flow, a side-branch quarter-wave Helmholtz resonator (J-pipe) configuration was designed.
+    </p>
+  </div>
+
+  <!-- SECTION 2: PROJECT GOAL & AIM -->
+  <div class="space-y-2">
+    <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">2. Project Goal &amp; Aim:</h4>
+    <p>
+      The primary objective was to mathematically size, parametrically model, and package a 63.5 mm (2.5 in) side-branch resonator upstream of the main muffler section. The system leverages destructive phase interference (quarter-wave anti-phase cancellation) to cancel target 125 Hz sound pressure waves while maintaining zero backpressure penalty and fitting within tight chassis floorpan constraints.
+    </p>
+  </div>
+
+  <!-- SECTION 3: TECHNICAL EXECUTION & MATHEMATICS -->
+  <div class="space-y-3">
+    <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">3. Technical Execution &amp; Mathematical Formulation:</h4>
+    
+    <p>&bull; <strong>Operating Baseline Parameters:</strong> Targeted a 125 Hz low-frequency drone spike under an operating exhaust gas temperature (<i>T</i><sub>gas</sub>) of 600&deg;C (1,112&deg;F) in the mid-pipe section of a 63.5 mm outer diameter (OD) 304 stainless steel exhaust system.</p>
+
+    <p>&bull; <strong>Speed of Sound Thermal Correction:</strong> Adjusted acoustic velocity (<i>c</i>) for elevated exhaust gas working temperatures (<i>T</i><sub>gas</sub> in &deg;C):</p>
+    <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 font-mono text-[11px] text-cyan-300 overflow-x-auto text-center">
+      <i>c</i> = 331.4 + 0.6 &middot; <i>T</i><sub>gas</sub> &nbsp;=&nbsp; 331.4 + 0.6 &middot; 600 &nbsp;&approx;&nbsp; 517 m/s
+    </div>
+
+    <p>&bull; <strong>Quarter-Wave Acoustic Length Calculation:</strong> Calculated required side-branch internal acoustic length (<i>L</i>) to achieve a 180&deg; phase shift upon wave reflection off the closed end cap:</p>
+    <div class="p-3 bg-slate-950 rounded-lg border border-slate-800 font-mono text-[11px] text-cyan-300 overflow-x-auto text-center">
+      <i>L</i> = <sup><i>c</i></sup> &frasl; <sub>4 &middot; <i>f</i><sub>drone</sub></sub> &nbsp;=&nbsp; <sup>517</sup> &frasl; <sub>4 &middot; 125</sub> &nbsp;=&nbsp; 1.034 m &nbsp;&lpar;1,034 mm&rpar;
+    </div>
+
+    <p>&bull; <strong>Chamber Sizing &amp; Material Selection:</strong> Specified 60.0 mm &ndash; 63.5 mm OD 304 stainless steel tubing with 1.5 mm wall thickness, providing an effective internal cavity volume of ~0.42 L while enduring high thermal cycling and exhaust vibration.</p>
+
+    <p>&bull; <strong>CAD Packaging Optimization (Mandrel Fold):</strong> Because a 1,034 mm straight pipe would exceed underbody packaging limits, the tube path was routed in CAD (Onshape) using a 180&deg; mandrel bend. This folded the total acoustic path into a compact ~500 mm dual-pass J-pipe running parallel along the chassis floorpan.</p>
+
+    <p>&bull; <strong>DFM &amp; T-Junction Assembly:</strong> Designed for workbench pre-assembly featuring a Boolean side-port cutout on the main mid-pipe wall, flush branch fitment, and full-penetration TIG welds with end-cap sealing.</p>
+  </div>
+
+  <!-- SECTION 4: RESULTS & PERFORMANCE -->
+  <div class="space-y-2">
+    <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">4. Results &amp; Performance:</h4>
+    <p>
+      The targeted 1,034 mm side-branch resonator successfully achieved anti-phase destructive interference at 125 Hz, completely eliminating cabin drone at targeted cruising speeds. Because the main exhaust flow travels straight through the 63.5 mm pipe, exhaust gas velocity was preserved with zero added backpressure or loss in engine power output.
+    </p>
+  </div>
+
+  <!-- SECTION 5: CONCLUSIONS -->
+  <div class="space-y-2">
+    <h4 class="text-[11px] font-mono uppercase text-slate-200 font-bold">5. Conclusions &amp; Takeaways:</h4>
+    <p>
+      This project demonstrates how applying thermal gas dynamics and quarter-wave acoustic reflection theory enables high-performance sound attenuation. Re-routing the 1.034-meter path into a folded J-pipe geometry successfully bridged theoretical wave mechanics with real-world CAD packaging and TIG manufacturing intent.
+    </p>
+  </div>
+
+</div>
         `,
        wing: `
           <div class="space-y-6">
