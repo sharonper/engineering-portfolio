@@ -512,10 +512,12 @@
 
     </section>
 
+
+    <!-- GALLERY GRID -->
 <!-- CAD DESIGN GALLERY SECTION -->
 <section id="cad-gallery" class="py-20 border-t border-slate-800/80">
   <div class="max-w-6xl mx-auto px-6 space-y-10">
-    
+
     <!-- SECTION HEADER -->
     <div class="space-y-2">
       <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider">3D Modeling &amp; Assemblies</span>
@@ -526,33 +528,94 @@
     </div>
 
     <!-- GALLERY GRID -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- FULL-WIDTH UNIFIED PROJECT: GRAVITY-ACTUATED HOOK (CAD + FEA) -->
+      <article class="md:col-span-2 lg:col-span-3 rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col justify-between">
+        <div class="p-6 space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div class="space-y-1">
+              <div class="flex items-center gap-3 text-[11px] font-mono text-cyan-400">
+                <span>Fusion 360 &bull; SimScale FEA</span>
+                <span>&bull;</span>
+                <span>1,000 N Load &bull; Aluminium</span>
+              </div>
+              <h3 class="text-xl font-bold text-white">Gravity-Actuated Hook &amp; Linkage Assembly</h3>
+            </div>
+            <span class="text-xs font-mono text-slate-400">Click any image to view full size</span>
+          </div>
 
-<!-- CAD GALLERY ITEM: DESK ORGANISER -->
-<div class="rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col justify-between">
-  <div>
-    <div class="overflow-hidden bg-white h-52 flex items-center justify-center">
-      <img 
-        src="https://i.ibb.co/YTJY5czX/Desk-Organiser.png" 
-        alt="3D CAD model of the Desk Organiser with recessed trays, magnetic charger cutout, and angled support legs" 
-        class="w-full h-full object-cover object-[35%_65%] brightness-110 contrast-105 hover:scale-105 transition-transform duration-300"
-      >
-    </div>
-    <div class="p-5 space-y-2">
-      <div class="flex items-center justify-between text-[11px] font-mono text-cyan-400">
-        <span>Fusion 360</span>
-        <span>Consumer Hardware</span>
-      </div>
-      <h3 class="text-base font-bold text-white">Desk Organiser &amp; Tray</h3>
-      <p class="text-xs text-slate-400 leading-relaxed">
-        Low-profile desktop organiser featuring recessed accessory compartments, a notched circular pocket sized for a magnetic charger with cable routing, and angled support legs for desk clearance.
-      </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <a href="https://ibb.co/Kc3HgcGk" target="_blank" rel="noopener noreferrer" class="group rounded-lg border border-slate-800 bg-white overflow-hidden flex flex-col">
+              <div class="h-56 w-full flex items-center justify-center p-2 overflow-hidden">
+                <img
+                  src="https://i.ibb.co/Fkjt1kWM/Gravity-Hook-CAD.png"
+                  alt="Gravity-actuated hook and linkage CAD assembly with fasteners"
+                  class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="px-3 py-2 bg-slate-950 text-[11px] font-mono text-slate-300 border-t border-slate-800">
+                1. CAD Assembly
+              </span>
+            </a>
+
+            <a href="https://ibb.co/3mr6SHm4" target="_blank" rel="noopener noreferrer" class="group rounded-lg border border-slate-800 bg-white overflow-hidden flex flex-col">
+              <div class="h-56 w-full flex items-center justify-center p-2 overflow-hidden">
+                <img
+                  src="https://i.ibb.co/d4WCky4j/Gravity-Hook-dimensions-with-Link.png"
+                  alt="2D CAD dimensions sketch for gravity hook and link"
+                  class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="px-3 py-2 bg-slate-950 text-[11px] font-mono text-slate-300 border-t border-slate-800">
+                2. Dimensions Sketch
+              </span>
+            </a>
+
+            <a href="https://ibb.co/CKHtPkR5" target="_blank" rel="noopener noreferrer" class="group rounded-lg border border-slate-800 bg-white overflow-hidden flex flex-col">
+              <div class="h-56 w-full flex items-center justify-center p-2 overflow-hidden">
+                <img
+                  src="https://i.ibb.co/tpJhL7VM/Gravity-Hook-Mesh.png"
+                  alt="SimScale surface mesh of the simplified gravity hook assembly"
+                  class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="px-3 py-2 bg-slate-950 text-[11px] font-mono text-slate-300 border-t border-slate-800">
+                3. FEA Surface Mesh
+              </span>
+            </a>
+
+            <a href="https://ibb.co/HLL9cKLk" target="_blank" rel="noopener noreferrer" class="group rounded-lg border border-slate-800 bg-white overflow-hidden flex flex-col">
+              <div class="h-56 w-full flex items-center justify-center p-2 overflow-hidden">
+                <img
+                  src="https://i.ibb.co/tww10HwW/Simulation-Results.png"
+                  alt="Static structural simulation results under 1,000 N load in Aluminium"
+                  class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="px-3 py-2 bg-slate-950 text-[11px] font-mono text-slate-300 border-t border-slate-800">
+                4. 1,000 N FEA Results
+              </span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 pt-1 text-xs text-slate-400 leading-relaxed">
+            <p class="lg:col-span-2">
+              Multi-plate linkage and lower jaw assembly dimensioned in CAD, simplified (fasteners removed, pin/contact conditions) for meshing, and evaluated under a 1,000 N downward load in Aluminium with a fixed top bore. Yellow displacement zones indicate higher relative deflection away from the fixed support, showing why filleting sharp contact edges and checking jaw deflection.
+            </p>
+            <div class="rounded-lg bg-slate-950/70 border border-slate-800/80 p-3.5 space-y-1 font-mono text-[11px] text-slate-300">
+              <div><span class="text-cyan-400">Load:</span> 1,000 N downward (inner jaws)</div>
+              <div><span class="text-cyan-400">Constraint:</span> Fixed top shackle bore</div>
+              <div><span class="text-cyan-400">Material:</span> Aluminium </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-6 py-3 bg-slate-950/80 border-t border-slate-800/80 text-[11px] font-mono text-slate-400">
+          CAD Assembly &bull; Dimensional Sketch &bull; Mesh Prep &bull; 1,000 N Aluminium FEA &bull; Yellow Deflection Zones
+        </div>
+      </article>
+
     </div>
   </div>
-  <div class="px-5 py-3 bg-slate-950/80 border-t border-slate-800/80 text-[11px] font-mono text-slate-400">
-    Magnetic Charger Fit &bull; Pocket Extrusions &bull; DFM Ready
-  </div>
-</div>
 </section>
 
 
