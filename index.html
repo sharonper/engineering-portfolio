@@ -513,7 +513,6 @@
     </section>
 
 
-    <!-- GALLERY GRID -->
 <!-- CAD DESIGN GALLERY SECTION -->
 <section id="cad-gallery" class="py-20 border-t border-slate-800/80">
   <div class="max-w-6xl mx-auto px-6 space-y-10">
@@ -528,6 +527,8 @@
     </div>
 
     <!-- GALLERY GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
       <!-- FULL-WIDTH UNIFIED PROJECT: GRAVITY-ACTUATED HOOK (CAD + FEA) -->
       <article class="md:col-span-2 lg:col-span-3 rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col justify-between">
         <div class="p-6 space-y-6">
@@ -604,7 +605,7 @@
             <div class="rounded-lg bg-slate-950/70 border border-slate-800/80 p-3.5 space-y-1 font-mono text-[11px] text-slate-300">
               <div><span class="text-cyan-400">Load:</span> 1,000 N downward (inner jaws)</div>
               <div><span class="text-cyan-400">Constraint:</span> Fixed top shackle bore</div>
-              <div><span class="text-cyan-400">Material:</span> Aluminium </div>
+              <div><span class="text-cyan-400">Material:</span> Aluminium</div>
             </div>
           </div>
         </div>
@@ -614,9 +615,103 @@
         </div>
       </article>
 
+ <!-- CAD GALLERY ITEM: JOCKEY WHEEL CLAMP (WIDER 2-COLUMN CARD) -->
+<div class="md:col-span-2 lg:col-span-2 rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col justify-between">
+  <div>
+    <div class="relative overflow-hidden bg-white h-64 flex items-center justify-center">
+      <img
+        id="jockey-clamp-img"
+        src="https://i.ibb.co/23cgGHp7/Jockey-Wheel-Clamp-closed.png"
+        alt="3D CAD model of the 48 mm Jockey Wheel Clamp assembly in closed position"
+        class="w-full h-full object-contain scale-[1.35] origin-[55%_55%] transition-transform duration-300"
+      >
+
+      <!-- Closed / Open Switcher -->
+      <div class="absolute bottom-3 right-3 z-10 flex rounded-lg bg-slate-900/90 p-0.5 border border-slate-700/80 shadow-md">
+        <button
+          type="button"
+          id="btn-clamp-closed"
+          onclick="setClampView('closed')"
+          class="px-3 py-1 rounded-md text-[11px] font-mono font-semibold bg-cyan-500 text-slate-950 transition-colors cursor-pointer"
+        >
+          Closed
+        </button>
+        <button
+          type="button"
+          id="btn-clamp-open"
+          onclick="setClampView('open')"
+          class="px-3 py-1 rounded-md text-[11px] font-mono font-semibold text-slate-300 hover:text-white transition-colors cursor-pointer"
+        >
+          Open
+        </button>
+      </div>
+    </div>
+
+    <div class="p-5 space-y-2">
+      <div class="flex items-center justify-between text-[11px] font-mono text-cyan-400">
+        <span>Fusion 360</span>
+        <span>Mechanical Hardware</span>
+      </div>
+      <h3 class="text-base font-bold text-white">Jockey Wheel Clamp</h3>
+      <p class="text-xs text-slate-400 leading-relaxed">
+        Hinged clamping assembly modeled in Fusion 360 around a 48 mm cylindrical bore, featuring a flanged mounting base, pivoting upper jaw, and threaded clamping lever.
+      </p>
     </div>
   </div>
-</section>
+  <div class="px-5 py-3 bg-slate-950/80 border-t border-slate-800/80 text-[11px] font-mono text-slate-400">
+    &Oslash;48 mm Bore &bull; Hinged Jaw &bull; Threaded Lever
+  </div>
+</div>
+
+<script>
+  function setClampView(mode) {
+    const img = document.getElementById('jockey-clamp-img');
+    const closedBtn = document.getElementById('btn-clamp-closed');
+    const openBtn = document.getElementById('btn-clamp-open');
+    if (!img || !closedBtn || !openBtn) return;
+
+    if (mode === 'open') {
+      img.src = 'https://i.ibb.co/fVrqM0ts/Jockey-Wheel-Clamp-open.png';
+      img.alt = '3D CAD model of the 48 mm Jockey Wheel Clamp assembly in open position';
+      img.className = 'w-full h-full object-contain scale-[1.15] origin-[55%_50%] transition-transform duration-300';
+      openBtn.className = 'px-3 py-1 rounded-md text-[11px] font-mono font-semibold bg-cyan-500 text-slate-950 transition-colors cursor-pointer';
+      closedBtn.className = 'px-3 py-1 rounded-md text-[11px] font-mono font-semibold text-slate-300 hover:text-white transition-colors cursor-pointer';
+    } else {
+      img.src = 'https://i.ibb.co/23cgGHp7/Jockey-Wheel-Clamp-closed.png';
+      img.alt = '3D CAD model of the 48 mm Jockey Wheel Clamp assembly in closed position';
+      img.className = 'w-full h-full object-contain scale-[1.35] origin-[55%_55%] transition-transform duration-300';
+      closedBtn.className = 'px-3 py-1 rounded-md text-[11px] font-mono font-semibold bg-cyan-500 text-slate-950 transition-colors cursor-pointer';
+      openBtn.className = 'px-3 py-1 rounded-md text-[11px] font-mono font-semibold text-slate-300 hover:text-white transition-colors cursor-pointer';
+    }
+  }
+</script>
+
+      <!-- CARD 1: DESK ORGANISER -->
+      <div class="rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col justify-between">
+        <div>
+          <div class="overflow-hidden bg-white h-52 flex items-center justify-center">
+            <img
+              src="https://i.ibb.co/YTJY5czX/Desk-Organiser.png"
+              alt="3D CAD model of the Desk Organiser with recessed trays, magnetic charger cutout, and angled support legs"
+              class="w-full h-full object-cover object-[35%_65%] brightness-110 contrast-105 hover:scale-105 transition-transform duration-300"
+            >
+          </div>
+          <div class="p-5 space-y-2">
+            <div class="flex items-center justify-between text-[11px] font-mono text-cyan-400">
+              <span>Fusion 360</span>
+              <span>Consumer Hardware</span>
+            </div>
+            <h3 class="text-base font-bold text-white">Desk Organiser &amp; Tray</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Low-profile desktop organiser featuring recessed accessory compartments, a notched circular pocket sized for a magnetic charger with cable routing, and angled support legs for desk clearance.
+            </p>
+          </div>
+        </div>
+        <div class="px-5 py-3 bg-slate-950/80 border-t border-slate-800/80 text-[11px] font-mono text-slate-400">
+          Magnetic Charger Fit &bull; Pocket Extrusions &bull; DFM Ready
+        </div>
+      </div>
+      </section>
 
 
     <!-- ========================================== -->
