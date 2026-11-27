@@ -526,7 +526,7 @@
       </p>
     </div>
 
-    <!-- GALLERY GRID -->
+  <!-- GALLERY GRID -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
       <!-- FULL-WIDTH UNIFIED PROJECT: GRAVITY-ACTUATED HOOK (CAD + FEA) -->
@@ -600,7 +600,7 @@
 
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 pt-1 text-xs text-slate-400 leading-relaxed">
             <p class="lg:col-span-2">
-              Multi-plate linkage and lower jaw assembly dimensioned in CAD, simplified (fasteners removed, pin/contact conditions) for meshing, and evaluated under a 1,000 N downward load in Aluminium with a fixed top bore. Yellow displacement zones indicate higher relative deflection away from the fixed support, showing why filleting sharp contact edges and checking jaw deflection.
+              Multi-plate linkage and lower jaw assembly dimensioned in CAD, simplified (fasteners removed, pin/contact conditions) for meshing, and evaluated under a 1,000 N downward load in Aluminium with a fixed top bore. Yellow displacement zones indicate higher relative deflection away from the fixed support, showing why filleting sharp contact edges and checking jaw deflection are key next design refinements.
             </p>
             <div class="rounded-lg bg-slate-950/70 border border-slate-800/80 p-3.5 space-y-1 font-mono text-[11px] text-slate-300">
               <div><span class="text-cyan-400">Load:</span> 1,000 N downward (inner jaws)</div>
@@ -615,53 +615,109 @@
         </div>
       </article>
 
- <!-- CAD GALLERY ITEM: JOCKEY WHEEL CLAMP (WIDER 2-COLUMN CARD) -->
-<div class="md:col-span-2 lg:col-span-2 rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col justify-between">
-  <div>
-    <div class="relative overflow-hidden bg-white h-64 flex items-center justify-center">
-      <img
-        id="jockey-clamp-img"
-        src="https://i.ibb.co/23cgGHp7/Jockey-Wheel-Clamp-closed.png"
-        alt="3D CAD model of the 48 mm Jockey Wheel Clamp assembly in closed position"
-        class="w-full h-full object-contain scale-[1.35] origin-[55%_55%] transition-transform duration-300"
-      >
+      <!-- CAD GALLERY ITEM: JOCKEY WHEEL CLAMP (2-COLUMN CARD) -->
+      <div class="md:col-span-2 lg:col-span-2 rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col justify-between">
+        <div>
+          <div class="relative overflow-hidden bg-white h-64 flex items-center justify-center">
+            <img
+              id="jockey-clamp-img"
+              src="https://i.ibb.co/23cgGHp7/Jockey-Wheel-Clamp-closed.png"
+              alt="3D CAD model of the 48 mm Jockey Wheel Clamp assembly in closed position"
+              class="w-full h-full object-contain scale-[1.35] origin-[55%_55%] transition-transform duration-300"
+            >
 
-      <!-- Closed / Open Switcher -->
-      <div class="absolute bottom-3 right-3 z-10 flex rounded-lg bg-slate-900/90 p-0.5 border border-slate-700/80 shadow-md">
-        <button
-          type="button"
-          id="btn-clamp-closed"
-          onclick="setClampView('closed')"
-          class="px-3 py-1 rounded-md text-[11px] font-mono font-semibold bg-cyan-500 text-slate-950 transition-colors cursor-pointer"
-        >
-          Closed
-        </button>
-        <button
-          type="button"
-          id="btn-clamp-open"
-          onclick="setClampView('open')"
-          class="px-3 py-1 rounded-md text-[11px] font-mono font-semibold text-slate-300 hover:text-white transition-colors cursor-pointer"
-        >
-          Open
-        </button>
-      </div>
-    </div>
+            <!-- Closed / Open Switcher -->
+            <div class="absolute bottom-3 right-3 z-10 flex rounded-lg bg-slate-900/90 p-0.5 border border-slate-700/80 shadow-md">
+              <button
+                type="button"
+                id="btn-clamp-closed"
+                onclick="setClampView('closed')"
+                class="px-3 py-1 rounded-md text-[11px] font-mono font-semibold bg-cyan-500 text-slate-950 transition-colors cursor-pointer"
+              >
+                Closed
+              </button>
+              <button
+                type="button"
+                id="btn-clamp-open"
+                onclick="setClampView('open')"
+                class="px-3 py-1 rounded-md text-[11px] font-mono font-semibold text-slate-300 hover:text-white transition-colors cursor-pointer"
+              >
+                Open
+              </button>
+            </div>
+          </div>
 
-    <div class="p-5 space-y-2">
-      <div class="flex items-center justify-between text-[11px] font-mono text-cyan-400">
-        <span>Fusion 360</span>
-        <span>Mechanical Hardware</span>
+          <div class="p-5 space-y-2">
+            <div class="flex items-center justify-between text-[11px] font-mono text-cyan-400">
+              <span>Fusion 360</span>
+              <span>Mechanical Hardware</span>
+            </div>
+            <h3 class="text-base font-bold text-white">Jockey Wheel Clamp</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Hinged clamping assembly modeled in Fusion 360 around a 48 mm cylindrical bore, featuring a flanged mounting base, pivoting upper jaw, and threaded clamping lever.
+            </p>
+          </div>
+        </div>
+        <div class="px-5 py-3 bg-slate-950/80 border-t border-slate-800/80 text-[11px] font-mono text-slate-400">
+          &Oslash;48 mm Bore &bull; Hinged Jaw &bull; Threaded Lever
+        </div>
       </div>
-      <h3 class="text-base font-bold text-white">Jockey Wheel Clamp</h3>
-      <p class="text-xs text-slate-400 leading-relaxed">
-        Hinged clamping assembly modeled in Fusion 360 around a 48 mm cylindrical bore, featuring a flanged mounting base, pivoting upper jaw, and threaded clamping lever.
-      </p>
+
+      <!-- CARD 1: DESK ORGANISER (1-COLUMN CARD) -->
+      <div class="rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col justify-between">
+        <div>
+          <div class="overflow-hidden bg-white h-64 flex items-center justify-center">
+            <img
+              src="https://i.ibb.co/YTJY5czX/Desk-Organiser.png"
+              alt="3D CAD model of the Desk Organiser with recessed trays, magnetic charger cutout, and angled support legs"
+              class="w-full h-full object-cover object-[35%_65%] brightness-110 contrast-105 hover:scale-105 transition-transform duration-300"
+            >
+          </div>
+          <div class="p-5 space-y-2">
+            <div class="flex items-center justify-between text-[11px] font-mono text-cyan-400">
+              <span>Fusion 360</span>
+              <span>Consumer Hardware</span>
+            </div>
+            <h3 class="text-base font-bold text-white">Desk Organiser &amp; Tray</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Low-profile desktop organiser featuring recessed accessory compartments, a notched circular pocket sized for a magnetic charger with cable routing, and angled support legs for desk clearance.
+            </p>
+          </div>
+        </div>
+        <div class="px-5 py-3 bg-slate-950/80 border-t border-slate-800/80 text-[11px] font-mono text-slate-400">
+          Magnetic Charger Fit &bull; Pocket Extrusions &bull; DFM Ready
+        </div>
+      </div>
+
+      <!-- CAD GALLERY ITEM: OLDHAM'S COUPLING (2-COLUMN CARD) -->
+      <div class="md:col-span-2 lg:col-span-2 rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col justify-between">
+        <div>
+          <a href="https://ibb.co/twqZzQSM" target="_blank" rel="noopener noreferrer" class="group block overflow-hidden bg-white h-64 flex items-center justify-center">
+            <img
+              src="https://i.ibb.co/hxBXcLkR/Oldhams-Coupling-ezgif-com-video-to-gif-converter.gif"
+              alt="Animated Oldham's Coupling showing sliding center disc and rotating hubs"
+              class="w-full h-full object-contain scale-[1.35] origin-[50%_52%] group-hover:scale-[1.4] transition-transform duration-300"
+            >
+          </a>
+
+          <div class="p-5 space-y-2">
+            <div class="flex items-center justify-between text-[11px] font-mono text-cyan-400">
+              <span>Fusion 360</span>
+              <span>Shaft Coupling</span>
+            </div>
+            <h3 class="text-base font-bold text-white">Oldham&rsquo;s Coupling</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Rotary shaft coupling assembly with dual hubs and a sliding center disc modeled in Fusion 360 to transmit torque while accommodating parallel shaft offset.
+            </p>
+          </div>
+        </div>
+        <div class="px-5 py-3 bg-slate-950/80 border-t border-slate-800/80 text-[11px] font-mono text-slate-400">
+          Sliding Center Disc &bull; Dual Hubs &bull; Motion Study
+        </div>
+      </div>
+
     </div>
-  </div>
-  <div class="px-5 py-3 bg-slate-950/80 border-t border-slate-800/80 text-[11px] font-mono text-slate-400">
-    &Oslash;48 mm Bore &bull; Hinged Jaw &bull; Threaded Lever
-  </div>
-</div>
+    <!-- END GALLERY GRID -->
 
 <script>
   function setClampView(mode) {
@@ -685,34 +741,6 @@
     }
   }
 </script>
-
-      <!-- CARD 1: DESK ORGANISER -->
-      <div class="rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col justify-between">
-        <div>
-          <div class="overflow-hidden bg-white h-52 flex items-center justify-center">
-            <img
-              src="https://i.ibb.co/YTJY5czX/Desk-Organiser.png"
-              alt="3D CAD model of the Desk Organiser with recessed trays, magnetic charger cutout, and angled support legs"
-              class="w-full h-full object-cover object-[35%_65%] brightness-110 contrast-105 hover:scale-105 transition-transform duration-300"
-            >
-          </div>
-          <div class="p-5 space-y-2">
-            <div class="flex items-center justify-between text-[11px] font-mono text-cyan-400">
-              <span>Fusion 360</span>
-              <span>Consumer Hardware</span>
-            </div>
-            <h3 class="text-base font-bold text-white">Desk Organiser &amp; Tray</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">
-              Low-profile desktop organiser featuring recessed accessory compartments, a notched circular pocket sized for a magnetic charger with cable routing, and angled support legs for desk clearance.
-            </p>
-          </div>
-        </div>
-        <div class="px-5 py-3 bg-slate-950/80 border-t border-slate-800/80 text-[11px] font-mono text-slate-400">
-          Magnetic Charger Fit &bull; Pocket Extrusions &bull; DFM Ready
-        </div>
-      </div>
-      </section>
-
 
     <!-- ========================================== -->
     <!-- SKILLS SECTION -->
